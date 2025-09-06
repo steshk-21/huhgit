@@ -1,4 +1,4 @@
-module huhgit
+module github.com/Cod-e-Codes/huhgit
 
 go 1.24.5
 
@@ -56,3 +56,4 @@ require (
 	golang.org/x/text v0.24.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
+
