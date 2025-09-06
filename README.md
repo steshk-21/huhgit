@@ -1,5 +1,7 @@
 # huhgit
 
+![Demo of huhgit](huhgit-demo.gif)
+
 `huhgit` is a terminal-based tool for interacting with GitHub repositories. It provides a TUI for pushing branches, creating pull requests, and generating conventional commits, all from the command line.
 
 ## Features
