@@ -2,6 +2,8 @@
 
 ![Demo of huhgit](huhgit-demo.gif)
 
+![Split-screen screenshot of huhgit output and PR](huhgit-screenshot.jpg)
+
 `huhgit` is a terminal-based tool for interacting with GitHub repositories. It provides a TUI for pushing branches, creating pull requests, and generating conventional commits, all from the command line.
 
 ## Features
@@ -39,3 +41,4 @@
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
