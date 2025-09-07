@@ -250,8 +250,8 @@ function Show-Summary {
 
 # Main execution
 try {
-    Write-ColorOutput "🚀 huhgit Release Script" $InfoColor
-    Write-ColorOutput "========================" $InfoColor
+    Write-ColorOutput "huhgit Release Script" $InfoColor
+    Write-ColorOutput "====================" $InfoColor
     
     $version = Get-Version
     Write-ColorOutput "Release version: $version" $InfoColor
@@ -266,9 +266,9 @@ try {
     New-Release -Version $version
     Show-Summary -Version $version
     
-    Write-ColorOutput "`n✅ Release process completed successfully!" $SuccessColor
+    Write-ColorOutput "`nRelease process completed successfully!" $SuccessColor
 }
 catch {
-    Write-ColorOutput "`n❌ Release process failed: $($_.Exception.Message)" $ErrorColor
+    Write-ColorOutput "`nRelease process failed: $($_.Exception.Message)" $ErrorColor
     exit 1
 }

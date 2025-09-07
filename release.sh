@@ -303,8 +303,8 @@ done
 
 # Main execution
 main() {
-    print_color "$CYAN" "🚀 huhgit Release Script"
-    print_color "$CYAN" "========================"
+    print_color "$CYAN" "huhgit Release Script"
+    print_color "$CYAN" "===================="
     
     local version=$(get_version)
     print_color "$BLUE" "Release version: $version"
@@ -320,7 +320,7 @@ main() {
     show_summary "$version"
     
     print_color "$GREEN" ""
-    print_color "$GREEN" "✅ Release process completed successfully!"
+    print_color "$GREEN" "Release process completed successfully!"
 }
 
 # Run main function
