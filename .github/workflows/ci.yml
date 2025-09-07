@@ -106,7 +106,7 @@ jobs:
         fi
     
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: huhgit-${{ matrix.goos }}-${{ matrix.goarch }}
         path: huhgit-${{ matrix.goos }}-${{ matrix.goarch }}*
