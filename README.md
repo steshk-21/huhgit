@@ -5,7 +5,7 @@
 
 ![Demo of huhgit](huhgit-demo.gif)
 
-![Split-screen screenshot of huhgit output and PR](huhgit-screenshot.jpg)
+<img src="huhgit-screenshot.jpg" alt="Split-screen screenshot of huhgit output and PR" width="480">
 
 `huhgit` is a terminal-based tool for interacting with GitHub repositories. It provides a TUI for pushing branches, creating pull requests, and generating conventional commits, all from the command line.
 
