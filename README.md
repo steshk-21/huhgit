@@ -8,7 +8,7 @@
 
 ## Latest Release
 
-Version 1.0.0 is available with pre-built binaries for Windows, Linux, macOS, and Android. Download from the [releases page](https://github.com/Cod-e-Codes/huhgit/releases/latest).
+Version 1.0.0 is available with pre-built binaries for Windows, Linux, and macOS. Download from the [releases page](https://github.com/Cod-e-Codes/huhgit/releases/latest).
 
 ## Features
 
@@ -32,7 +32,6 @@ Download the appropriate binary for your platform from the [releases page](https
 - Windows: `huhgit-windows-amd64.exe` or `huhgit-windows-arm64.exe`
 - Linux: `huhgit-linux-amd64` or `huhgit-linux-arm64`
 - macOS: `huhgit-darwin-amd64` or `huhgit-darwin-arm64`
-- Android: `huhgit-android-arm64` or `huhgit-android-amd64`
 
 ### From Source
 

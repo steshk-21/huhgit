@@ -121,9 +121,7 @@ function Build-Binaries {
         @{ GOOS = "linux"; GOARCH = "amd64"; EXT = ""; NAME = "huhgit-linux-amd64" },
         @{ GOOS = "linux"; GOARCH = "arm64"; EXT = ""; NAME = "huhgit-linux-arm64" },
         @{ GOOS = "darwin"; GOARCH = "amd64"; EXT = ""; NAME = "huhgit-darwin-amd64" },
-        @{ GOOS = "darwin"; GOARCH = "arm64"; EXT = ""; NAME = "huhgit-darwin-arm64" },
-        @{ GOOS = "android"; GOARCH = "arm64"; EXT = ""; NAME = "huhgit-android-arm64" },
-        @{ GOOS = "android"; GOARCH = "amd64"; EXT = ""; NAME = "huhgit-android-amd64" }
+        @{ GOOS = "darwin"; GOARCH = "arm64"; EXT = ""; NAME = "huhgit-darwin-arm64" }
     )
     
     $ldflags = "-X main.version=$Version -s -w"
@@ -178,7 +176,6 @@ function New-Release {
 
 - Bug fixes and improvements
 - Cross-platform binaries available
-- Android support added
 
 ## Downloads
 
@@ -186,18 +183,10 @@ Binaries are available for:
 - Windows (amd64, arm64)
 - Linux (amd64, arm64) 
 - macOS (amd64, arm64)
-- Android (arm64, amd64)
 
 ## Installation
 
 Download the appropriate binary for your platform and add it to your PATH.
-
-### Android Installation
-For Android devices, you can install the binary using Termux or similar terminal emulator:
-1. Download the appropriate Android binary
-2. Transfer to your device
-3. Make executable: `chmod +x huhgit-android-*`
-4. Run: `./huhgit-android-*`
 "@
         
         $releaseCmd = "gh release create v$Version --title `"Release v$Version`" --notes `"$releaseNotes`""

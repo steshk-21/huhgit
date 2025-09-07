@@ -126,8 +126,6 @@ build_binaries() {
         "linux/arm64/huhgit-linux-arm64"
         "darwin/amd64/huhgit-darwin-amd64"
         "darwin/arm64/huhgit-darwin-arm64"
-        "android/arm64/huhgit-android-arm64"
-        "android/amd64/huhgit-android-amd64"
     )
     
     local ldflags="-X main.version=$version -s -w"
@@ -172,7 +170,6 @@ create_release() {
 
 - Bug fixes and improvements
 - Cross-platform binaries available
-- Android support added
 
 ## Downloads
 
@@ -180,18 +177,10 @@ Binaries are available for:
 - Windows (amd64, arm64)
 - Linux (amd64, arm64) 
 - macOS (amd64, arm64)
-- Android (arm64, amd64)
 
 ## Installation
 
-Download the appropriate binary for your platform and add it to your PATH.
-
-### Android Installation
-For Android devices, you can install the binary using Termux or similar terminal emulator:
-1. Download the appropriate Android binary
-2. Transfer to your device
-3. Make executable: \`chmod +x huhgit-android-*\`
-4. Run: \`./huhgit-android-*\`"
+Download the appropriate binary for your platform and add it to your PATH."
         
         # Build the gh command
         local gh_cmd="gh release create v$version --title \"Release v$version\" --notes \"$release_notes\""
