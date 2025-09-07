@@ -1,5 +1,8 @@
 # huhgit
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/Cod-e-Codes/huhgit)](https://goreportcard.com/report/github.com/Cod-e-Codes/huhgit)
+[![CI](https://github.com/Cod-e-Codes/huhgit/actions/workflows/ci.yml/badge.svg)](https://github.com/Cod-e-Codes/huhgit/actions/workflows/ci.yml)
+
 ![Demo of huhgit](huhgit-demo.gif)
 
 ![Split-screen screenshot of huhgit output and PR](huhgit-screenshot.jpg)
