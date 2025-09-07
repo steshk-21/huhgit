@@ -98,7 +98,9 @@ run_tests() {
     fi
     
     print_color "$BLUE" "Running tests..."
-    go test ./...
+    
+    # Set environment variables to avoid Android CGO issues
+    GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go test ./...
     if [ $? -ne 0 ]; then
         print_color "$RED" "Tests failed!"
         exit 1

@@ -95,12 +95,23 @@ function Invoke-Tests {
     }
     
     Write-ColorOutput "Running tests..." $InfoColor
+    
+    # Set environment variables to avoid Android CGO issues
+    $env:GOOS = "windows"
+    $env:GOARCH = "amd64"
+    $env:CGO_ENABLED = "0"
+    
     go test ./...
     if ($LASTEXITCODE -ne 0) {
         Write-ColorOutput "Tests failed!" $ErrorColor
         exit 1
     }
     Write-ColorOutput "Tests passed!" $SuccessColor
+    
+    # Reset environment variables
+    Remove-Item Env:GOOS -ErrorAction SilentlyContinue
+    Remove-Item Env:GOARCH -ErrorAction SilentlyContinue
+    Remove-Item Env:CGO_ENABLED -ErrorAction SilentlyContinue
 }
 
 function Build-Binaries {
