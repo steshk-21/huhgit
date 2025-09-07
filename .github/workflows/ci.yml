@@ -98,6 +98,7 @@ jobs:
         GOOS: ${{ matrix.goos }}
         GOARCH: ${{ matrix.goarch }}
         CGO_ENABLED: 0
+      shell: bash
       run: |
         if [ "${{ matrix.goos }}" = "windows" ]; then
           go build -o huhgit-${{ matrix.goos }}-${{ matrix.goarch }}.exe .
