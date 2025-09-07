@@ -10,6 +10,14 @@
 
 # Local binaries
 huhgit
+huhgit-*
+
+# Release directories and build artifacts
+dist/
+build/
+release/
+releases/
+bin/
 
 # Test binary, built with `go test -c`
 *.test
@@ -33,4 +41,11 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Archive files
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
 
